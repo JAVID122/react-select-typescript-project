@@ -1,5 +1,31 @@
 .container{
- background: red;
- width:100px;
- height:100px;
+ position:relative;
+ width:20em;
+ min-height: 1.5em;
+ border: 0.05em solid #777;
+ display: flex;
+ align-items:center;
+ gap:.5em;
+ padding: .5em;
+ border-radius:.25em;
+ outline:none;
+}
+
+.container:focus{
+ border-color:hsl(200,100%,50%);
+}
+
+.value{
+ flex-grow:1;
+}
+
+
+.close-btn{
+ background:none;
+ color:#777;
+ border:none;
+ outline:none;
+ cursor:pointer;
+ padding:0;
+ font-size:1.25em;
 }
