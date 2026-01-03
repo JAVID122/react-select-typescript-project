@@ -18,7 +18,8 @@
 .value{
  flex-grow:1;
  display:flex;
- gap:.5em
+ gap:.5em;
+  flex-wrap: wrap;
 }
 
 

@@ -1,13 +1,18 @@
 import { useState } from "react"
 import { Select, type selectOptions } from "./Select"
 
-const options =[
-  {label:"first", value:1},
-  {label:"second", value:2},
-  {label:"third", value:3},
-  {label:"Fourth", value:4},
-  {label:"Fifth", value:5},
-   
+const options = [
+  { label: 'first', value: 1 },
+  { label: 'second', value: 2 },
+  { label: 'third', value: 3 },
+  { label: 'Fourth', value: 4 },
+  { label: 'Fifth', value: 5 },
+  { label: 'sixth', value: 6},
+  { label: 'seventh', value: 7 },
+   { label: 'Eighth', value: 8 },
+  { label: 'Nineth', value: 9 },
+  { label: 'Tenth', value: 10},
+  { label: 'Eleventh', value: 11 },
 
 ]
 function App() {
@@ -17,7 +22,7 @@ function App() {
 
   return (
     <>
-      <Select options={options} value={value1} onChange={(o) => setvalue1(o)} />
+      <Select multiple options={options} value={value1} onChange={(o) => setvalue1(o)} />
 
       <br/>
       <Select options={options} value={value2} onChange={(o) => setvalue2(o)} />
